@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list </title>
+    <link rel="stylesheet" href="main.css">
+    <!-- Include SweetAlert2 from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+</head>
+<body>
+    <h1 id="header">TO DO LIST</h1>
+    <div class="todo-container">
+        <div class="add-task">
+            <input type="text" name="task-description">
+            <span class="plus" id="show-alert">+</span>
+        </div>
+        <div class="tasks-content">
+            <span class="no-tasks-message">No tasks to show</span>
+        </div>
+    </div>
+    <div class="task-stats">
+        <div class="tasks-count">tasks <span>0</span>
+        </div>
+        <div class="tasks-completed">completed <span>0</span></div>
+    </div>
+    <!--link the js file here means we render the html code first-->
+    <script src="main.js"></script>
+</body>
+</html>
